@@ -337,7 +337,7 @@ with tab2:
         M1 = st.session_state['graph']
 
         if st.session_state['sub_index'] == 0:
-            st.title("Plotting Graph $S_{{{}}} = T_{}$ ".format(st.session_state['sub_index'],nx.diameter(M1)))
+            st.title("Plotting Graph $S_{{{}}} = T_{}$ ".format(nx.diameter(M1),st.session_state['sub_index']))
         else:
             st.title("Plotting Graph $T_{}$ ".format(st.session_state['sub_index']) )
     
